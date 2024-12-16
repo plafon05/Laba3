@@ -222,6 +222,14 @@ def Timer():
         btn7.place(relx=.5, rely=.8, anchor="c")
 
 
+window = Tk()
+window['bg'] = '#2E3B4E'
+window.title("Лабораторная работа №3")
+window.geometry("400x400")
+window.resizable(False, False)
+title_label = Label(window, text="Секундомер", font=("Arial", 24, 'bold'), bg="#2E3B4E", fg="#E1EFFF")
+title_label.pack(pady=20)
+btn_style = {"font": ("Arial", 18), "bg": "#66CDAA", "activebackground": "White", "relief": "solid", "bd": 2}
 
 # Настройка меток времени
 lbl = Label(window, text="Для начала нажми на кнопку Start", font=("Arial", 16), fg="#F4F4F4", bg="#2E3B4E")
